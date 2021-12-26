@@ -10,6 +10,8 @@ import java.nio.file.Paths;
 public class Transformer {
 
     public String transform(String filePath) throws IOException {
+    	
+    	System.out.println("filePath :" + Paths.get(filePath).toAbsolutePath());
 
         String content = new String(Files.readAllBytes(
                 Paths.get(filePath)));
